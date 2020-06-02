@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside#sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 20%;
+}
+
+aside#sidebar .logo {
+  text-decoration: none;
+  color: #010066;
+  margin: 20px 40px;
+}
+
+aside#sidebar .logo h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+aside#sidebar .addNewTask {
+  margin: 0 auto;
+  width: 75%;
+  padding: 12px;
+  outline: 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 0 30px 30px 30px;
+  background: #f1edfe;
+  color: #8767f7;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+aside#sidebar .addNewTask i {
+  margin-right: 8px;
+}
+
+aside#sidebar .addNewTask:hover {
+  background: #7854f6;
+  color: #f1edfe;
+}
+
+aside#sidebar ul.leftMenu {
+  width: 100%;
+  /*    background: green; */
+  margin-top: 40px;
+}
+
+aside#sidebar ul.leftMenu li {
+  list-style: none;
+}
+
+aside#sidebar ul.leftMenu li a {
+  text-decoration: none;
+  padding: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*      justify-content: space-around; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #47495c;
+  position: relative;
+  font-weight: bold;
+}
+
+aside#sidebar ul.leftMenu li a i {
+  margin: 6px 10px;
+  font-size: 18px;
+}
+
+aside#sidebar ul.leftMenu li a:hover {
+  background: #f1edfe;
+}
+
+aside#sidebar ul.leftMenu li a.active {
+  color: #0b0f32;
+}
+
+aside#sidebar ul.leftMenu li a.active::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: #7854f6;
+  position: absolute;
+  left: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+aside#sidebar ul.leftMenu li a .taskCount {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 50% 50%;
+  background: #e5eaf0;
+  font-size: 13px;
+  margin-left: auto;
+}
+
+aside#sidebar ul.leftMenu li a img {
+  width: 22px;
+  height: 22px;
+  margin: 6px 10px;
+}
+
+main#container {
+  background: #f6f7fb;
+  min-width: 80%;
+}
+
+main#container nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+main#container nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+}
+
+main#container nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+main#container nav ul li a.left {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #8d99a7;
+}
+
+main#container nav ul li.profile a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #060710;
+}
+
+main#container nav ul li.profile a img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+}
+
+main#container nav ul li.profile a i {
+  margin-left: 10px;
+}
+
+main#container nav ul li.separator {
+  height: 100%;
+  width: 4px;
+  border-right: 4px solid #47495c;
+  background: #47495c;
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */
