@@ -1,0 +1,10 @@
+Colors:
+
+	Casi blanco: #EDF2F6
+	Ceniza: #B8BBCF
+	Negro: #060710
+	Gris oscuro: #47495C	
+	Azul: #433AD1
+	
+	
+		
